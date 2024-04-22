@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let userBirth = prompt('Ваш рік народження?');
+    console.log(userBirth);
+    alert(userBirth);
+
+    let userCity = prompt('В якому місті ви жевете?');
+    console.log(userCity);
+
+    switch (userCity){
+        case 'Київ': alert('Ти живеш у столиці України');
+            break;
+        case 'Вашингтон': alert('Ти живеш у столиці США');
+            break;
+        case 'Лондон':
+            alert('Ти живеш у столиці Англії');
+            break;
+        default:
+            alert(`Ти живеш у місті ${userCity}!`)
+    }
+
+    let userSport = prompt('Ваш улюблений вид спорту?');
+    console.log(userSport);
+
+    switch (userSport){
+        case 'Футбол': alert('Круто! Хочеш стати Шевченко А?');
+            break;
+        case 'Бокс': alert('Круто! Хочеш стати Олександром Усіком?');
+            break;
+        case 'Баскетбол':
+            alert('Круто! Хочеш стати Бєлов Олександром?');
+            break;
+        default:
+            alert('Good Bay!')
+     }
+
+
+
+</script>
+</body>
+</html>
