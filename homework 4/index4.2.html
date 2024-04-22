@@ -7,19 +7,28 @@
 <body>
 <script>
 
-    let x= 111;
-    let num = true;
+    let userNum = 123;
+    let str = String(userNum);
 
-    if(x >= 111 && num){
-        console.log("Yes");
-            console.log("the numbers are the same");
+    let num1 = str[0];
+    let num2 = str[1];
+    let num3 = str[2];
 
+    if(
+        num1 === num2 &&
+        num2 === num3)
+    {
+        console.log('three numbers are the same');
     }
-    if(x == 112 || num){
-        console.log("Yes");
-        console.log("there are the same numbers");
+    else if (
+        num1 === num2 &&
+        num2 !== num3)
+    {
+        console.log('two numbers are equal');
     }
-
+    else {
+        console.log('false');
+    }
 
 
 </script>
