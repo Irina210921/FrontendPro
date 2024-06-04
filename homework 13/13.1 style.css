@@ -1,0 +1,30 @@
+.container{
+        width: 500px;
+        margin: 100px auto;
+        background-color: antiquewhite;
+    }
+h1{
+    color: crimson;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+
+h2{
+    color: darkgrey;
+}
+button{
+    margin-top: 25px;
+    border-radius: 2px;
+    background-color: #69BFE1;
+}
+.invalid{
+    border: 2px solid red;
+}
+.valid{
+    border: 2px solid green;
+}
+
+.error {
+    color: red;
+}
