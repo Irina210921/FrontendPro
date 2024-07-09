@@ -5,38 +5,30 @@
          this.b = b;
      }
 
-     get add() {
-         return this.calcAdd();
+     add(a, b) {
+        let total =  a + b;
+        return total;
      }
-     calcAdd() {
-         return this.a + this.b;
+     subtract(a, b) {
+         let difference = a - b;
+         return difference;
+     }
+    multiply(a, b) {
+        let multiplication = a * b;
+        return multiplication;
      }
 
-     get subtract() {
-         return this.calcSubtract();
-     }
-     calcSubtract() {
-         return this.a - this.b;
-     }
-     get multiply() {
-         return this.calcMultiply();
-     }
-     calcMultiply() {
-         return this.a * this.b;
-     }
-     get divide() {
-         return this.calcDivide();
-     }
-     calcDivide() {
-         return this.a / this.b;
+     divide(a, b) {
+         let division = a / b;
+         return division;
      }
 
  }
- const calc = new Calculator(5,3);
+ const calc = new Calculator();
 
- console.log(calc.add);
- console.log(calc.subtract);
- console.log(calc.multiply);
- console.log(calc.divide);
+ console.log(calc.add(5,3));
+ console.log(calc.subtract(10,4));
+ console.log(calc.multiply(3,6));
+ console.log(calc.divide(8,2));
 
 
