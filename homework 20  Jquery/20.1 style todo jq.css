@@ -78,3 +78,53 @@ h1, h2 {
     text-decoration: line-through;
     background: #69BFE1;
 }
+#modal{
+    display: none;
+}
+#modal_backgroung{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #cccccc;
+    opacity: 0.8;
+    z-index: 80;
+}
+#modal_window{
+    position: fixed;
+    padding: 5px;
+    background: #69BFE1;
+    width: 50%;
+    max-width: 100%;
+    min-height: 150px;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 99;
+}
+#modal_close{
+    position: absolute;
+    top:-2px;
+    right: -3px;
+    width: 25px;
+    height: 25px;
+    color: red;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+#modal_title{
+    text-align: center;
+    font-weight: bold;
+}
+#modal_text{
+    font: 14px Arial;
+}
+.btn btn-default{
+    background: #0be69d;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}

@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="20.1 style todo jq.css">
 
     <script src="jquery-3.7.1.min.js"></script>
-    <script src="modal.js"></script>
-
 
 </head>
 <body>
+<div id="modal">
+    <div id="modal_backgroung"></div>
+    <div id="modal_window">
+        <div id="modal_close">&#10006;</div>
+        <div id="modal_title">Ваше завдання</div>
+        <div id="modal_text">Текст завдання</div>
+    </div>
+
+</div>
+
+
+
+
 <div id="todo" class="container">
     <h1>ToDoList</h1>
     <form class="form js--form">
-        <input type="text" name="value" required="" class="form__input js--form__input">
+        <input  type="text" name="value" required="" class="form__input js--form__input">
         <button class="form__btn">Додати</button>
     </form>
     <ul class="js-todos-wrapper">
@@ -36,7 +47,7 @@
 
 
 <script src="js jqery.js"></script>
-
+<script src="modal.js"></script>
 
 </body>
 </html>
